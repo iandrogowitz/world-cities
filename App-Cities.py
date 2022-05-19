@@ -10,7 +10,7 @@ price_filter= st.slider('Median House Price:', 0,500001,20000)
                         
 housing_filter= st.sidebar.multiselect(
              'Choose Location'
-    df.ocean_proximity.unique())
+  
                         
 income_filter= st.sidebar.radio(
 'Choose income'
