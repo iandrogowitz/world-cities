@@ -9,11 +9,11 @@ df = pd.read_csv('housing.csv')
 price_filter= st.slider('Median House Price:', 0,500001,20000)
                         
 housing_filter= st.sidebar.multiselect(
-             'Choose Location'
-  
+             'Choose Location',
+df.ocean_proximity.unique())
                         
 income_filter= st.sidebar.radio(
-'Choose income'
+'Choose income',
     ('Low', 'Medium', 'High'))
                         
 df=df[df.median_house_value <=price_filter]
